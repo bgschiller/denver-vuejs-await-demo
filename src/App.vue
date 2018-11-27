@@ -22,4 +22,15 @@
 img {
   max-width: 60%;
 }
+body {
+    margin-bottom:50px;
+}
+footer {
+    position: fixed;
+    height: 50px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+}
 </style>
