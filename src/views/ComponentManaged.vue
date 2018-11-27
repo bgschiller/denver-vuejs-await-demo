@@ -17,27 +17,5 @@
 import { fetchCat } from "@/api";
 
 export default {
-  data() {
-    return {
-      loading: false,
-      cat: null,
-      error: null
-    };
-  },
-  methods: {
-    newCat() {
-      this.loading = true;
-      fetchCat()
-        .then(cat => {
-          this.loading = false;
-          this.error = null;
-          this.cat = cat;
-        })
-        .catch(err => {
-          this.loading = false;
-          this.error = err;
-        });
-    }
-  }
 };
 </script>

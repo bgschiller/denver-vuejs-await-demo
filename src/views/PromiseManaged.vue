@@ -20,16 +20,5 @@ import Await from "vue-await";
 import { fetchCat } from "@/api";
 
 export default {
-  data() {
-    return {
-      catPromise: null
-    };
-  },
-  components: { Await },
-  methods: {
-    newCat() {
-      this.catPromise = fetchCat();
-    }
-  }
 };
 </script>

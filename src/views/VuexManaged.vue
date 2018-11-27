@@ -14,19 +14,6 @@
 </template>
 
 <script>
-import { mapState } from "vuex";
 export default {
-  computed: {
-    ...mapState({
-      loading: state => state.status === "loading",
-      error: state => state.error,
-      cat: state => state.cat
-    })
-  },
-  methods: {
-    newCat() {
-      this.$store.dispatch("retrieveCat");
-    },
-  }
 };
 </script>
